@@ -1,12 +1,14 @@
+// CSS Libraries
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "uikit-mixins";
-// <--- add here file with your mixins
-@import "uikit-variables";
-@import "uikit";
-@import "uikit-components";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // CSS import
 @import "components/index";
 @import "pages/index";
+
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
 

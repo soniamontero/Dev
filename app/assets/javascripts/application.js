@@ -15,5 +15,4 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
-//= require uikit
-//= require uikit-components
+

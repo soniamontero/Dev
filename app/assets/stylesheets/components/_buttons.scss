@@ -1,0 +1,35 @@
+// Home Page orange buttons to see matches, create an account, edit your profile.
+
+.btn-orange {
+  padding: 10px 15px;
+  height: 45px;
+  width: 140px;
+  margin: 1vh;
+  border: 1px solid $light-orange;
+  transition: 0.1s background-color ease-in-out;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  background-color: $light-orange;
+  font-weight: 900;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 15px;
+  transition: all 0.6s ease 0s;
+}
+
+.btn-orange.joinbutton {
+  padding: 10px 15px;
+  height: 45px;
+  width: 140px;
+  margin: 1vh;
+  border: 1px solid #67bacb;
+  transition: 0.1s background-color ease-in-out;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  background-color: #67bacb;
+  font-weight: 900;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 15px;
+  transition: all 0.6s ease 0s;
+}
