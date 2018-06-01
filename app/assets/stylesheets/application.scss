@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "uikit-mixins";
+// <--- add here file with your mixins
+@import "uikit-variables";
+@import "uikit";
+@import "uikit-components";
+
+// CSS import
+@import "components/index";
+@import "pages/index";
+
