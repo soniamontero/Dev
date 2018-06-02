@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<head>
+  <script>
+    window.onscroll = function() {
+      growShrinkNavBar()
+    };
 
-    <title>Dev</title>
-    <%= csrf_meta_tags %>
+    function growShrinkNavBar() {
+      var Logo = document.getElementById("Logo")
+      var NavJobs = document.getElementById("NavJobs")
+      var NavEmployers = document.getElementById("NavEmployers")
+      var NavContent = document.getElementById("NavContent")
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        Logo.style.width = '30px';
+        NavJobs.style.fontSize = '10px';
+        NavEmployers.style.fontSize = '10px';
+        NavContent.style.height = '40px';
 
-  <body>
-    <body class='main-body'>
-      <%= render 'shared/navbar' %>
-      <%= yield %>
-      <%= render 'shared/footer' %>
+      } else {
+        Logo.style.width = '45px';
+        NavJobs.style.fontSize = '14px';
+        NavEmployers.style.fontSize = '14px';
+        NavContent.style.height = '70px';
+
+
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <title>Dev</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <body class='main-body'>
+    <%= render 'shared/navbar' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
-</html>
+  </html>

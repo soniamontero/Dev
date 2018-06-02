@@ -5,17 +5,6 @@
 .section-02 {
 }
 
-.section-03 {
-  margin-left: 25vh;
-  margin-right: 25vh;
-  max-width: 530px;
-  margin: auto;
-}
-
-@media (max-width: 767px) {
-  max-width: 350px;
-}
-
 .section-02-sub {
   margin-left: 10vh;
   margin-right: 10vh;
@@ -27,18 +16,34 @@
   text-align: center;
 }
 
+.section-03 {
+  margin-left: 25vh;
+  margin-right: 25vh;
+  max-width: 530px;
+  margin: auto;
+  padding-bottom: 10vh;
+}
+
+.section-04 {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 10vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
+}
+
 .home-list {
   padding-top: 28vh;
 }
 
 @media (max-width: 500px) {
   .home-list {
-  padding-top: 20vh;
+    padding-top: 20vh;
 
-  h2 {
-    font-size: 28px;
+    h2 {
+      font-size: 28px;
+    }
   }
-}
 }
 
 .headline {

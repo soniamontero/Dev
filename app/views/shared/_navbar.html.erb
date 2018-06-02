@@ -1,21 +1,24 @@
-<div class="navbar-container">
-  <div class="navbar-content">
+<div id='nav' class="navbar-container">
+  <div id="NavContent" class="navbar-content">
 
     <div class='nav-left'>
         <a href="/">
-      <img class="small-size" src="/assets/flock_logo.png" alt="Flock logo">
+      <img id="Logo" class="small-size" src="/assets/flock_logo.png" alt="Flock logo">
     </a>
 
     </div>
 
-    <ul class='nav-right hidden-sm-down'>
-      <li class="nav-right-padding"><a>Jobs</a></li>
-      <li class="nav-right-padding"><a>For employers</a></li>
-      <% if current_user %>
+    <ul class='nav-right letter-spacing hidden-sm-down'>
+      <li id='NavJobs' class="nav-right-padding"><a>Jobs</a></li>
+      <li id='NavEmployers' class="nav-right"><a>For employers</a></li>
+      <% if false %>
+      <%if current_user %>
       <li> <%= link_to 'Log Out', destroy_user_session_path %></li>
       <% else %>
       <li><%= link_to 'Sign In', new_user_session_path %></li>
       <% end %>
+      <% end %>
+
     </ul>
 
     <div class="dropdown hidden-md-up">

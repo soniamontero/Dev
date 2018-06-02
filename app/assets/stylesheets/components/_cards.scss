@@ -1,0 +1,41 @@
+.review-card {
+  padding: 20px;
+  .card-body {
+
+  }
+}
+
+.card-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+
+@media (max-width: 680px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  .review-card {
+    margin: 5vw;
+  }
+}
+
+.review-avatar img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.review-header {
+
+}
+.review-titles {
+  align-self: center;
+  padding-left: 25px;
+}
