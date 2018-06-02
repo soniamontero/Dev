@@ -1,23 +1,160 @@
-<div class="section-1">
-    <div class="banner" style="background-image: url('<%= image_path 'officeimgtransparency2.png', crop: :fill; %>') ;">
-      <ul class="home-list">
-        <h3 class="headline">Find the company that values the <b>unique you</b>.</h3>
-        <br>
+<div class="section-01">
+  <div class="banner" style="background-image: url('<%= image_path 'officeimgtransparency2.png', crop: :fill; %>') ;">
+    <ul class="home-list centered">
+      <h2 class="headline">Find the company that values <br>the <b>unique you</b>.</h2>
+      <br>
 
-        <%= link_to 'Join', new_user_registration_path, class: "btn btn-orange joinbutton" %>
-        <%= link_to 'Log in', new_user_session_path, class: "btn btn-orange" %>
+      <%= link_to 'Join', new_user_registration_path, class: "btn btn-orange joinbutton" %>
+      <%= link_to 'Log in', new_user_session_path, class: "btn btn-orange" %>
 
-        <!-- down blue arrow -->
+      <!-- down blue arrow -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="down-blue-arrow" class="demo">
+        <span></span>
+        <span></span>
+        <span></span>
         <br>
-        <br>
-        <br>
-        <br class="hidden-xs-down">
-        <br class="hidden-xs-down">
-        <br class="hidden-xs-down">
-        <div id="section07" class="demo">
-          <span></span>
-          <span></span>
-          <span></span>
+        <br class="hidden-sm-up">
+      </div>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="section-02">
+
+  <h3 class="centered blue-text md-padding-bot">The easiest way to find your dream job</h3>
+
+  <div class="section-02-sub">
+    <div style="width: 200px">
+      <div class="col">
+        <div class="row home-icons">
+          <%=image_tag("affinitysearchicon.png")%>
+        </div>
+        <div class="row sm-padding">
+          <p>Search  for  benefits  with  greater  nuance.</p>
         </div>
       </div>
     </div>
+
+    <div style="width: 200px">
+      <div class="col">
+        <div class="row home-icons">
+          <%=image_tag("transparencyicon.png")%>
+        </div>
+        <div class="row sm-padding">
+          <p>Transparency around benefits, salary and company culture.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 200px">
+      <div class="col">
+        <div class="row home-icons">
+          <%=image_tag("timeicon.png")%>
+        </div>
+        <div class="row sm-padding">
+         <p>Fast application process that respects your time.</p>
+       </div>
+     </div>
+   </div>
+
+   <div style="width: 200px">
+     <div class="col">
+      <div class="row home-icons">
+        <%=image_tag("interviewicon.png")%>
+      </div>
+      <div class="row sm-padding">
+        <p>Interview coaching with a real human.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="section-03">
+  <h3 class="centered blue-text md-padding-bot">How it works</h2>
+    <div class="centered">
+
+      <div class="row">
+        <div class="col-md-3 home-icons">
+          <%=image_tag("createprofileicon.png")%>
+        </div>
+        <div class="col-xs-6 col-md-9 mx-auto">
+          <h5>1. Create a profile</h5>
+          <p>Tell us about yourself — your skills, your preferred benefits, and your deal breakers.</p>
+        </div>
+      </div>
+
+      <!-- Since the items ordering on bootstrap doesn't work, hide the wrong content on xs to display the ordered one -->
+      <div class="hidden-sm-down">
+        <div class="row lg-padding-top">
+          <div class="col-xs-6 col-md-9 mx-auto">
+            <h5>2. Search jobs</h5>
+            <p>Review job listings and filter lists further to see more or less jobs.</p> </div>
+            <div class="col-md-3 home-icons">
+              <%=image_tag("filtericon.png")%>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden-md-up">
+          <div class="row lg-padding-top">
+            <div class="col-md-3 home-icons">
+              <%=image_tag("filtericon.png")%>
+            </div>
+            <div class="col-xs-6 col-md-9 mx-auto">
+              <h5>2. Search jobs</h5>
+              <p>Review job listings and filter lists further to see more or less jobs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row lg-padding-top flex-steps">
+          <div class="col-md-3 home-icons">
+            <%=image_tag("applicationicon.png")%>
+          </div>
+          <div class="col-xs-6 col-md-9 mx-auto">
+            <h5>3. Apply </h5>
+            <p>Apply for jobs. Our team will review your application and if you are a good match we’ll arrange an introduction.</p>
+          </div>
+        </div>
+
+
+        <div class="hidden-sm-down">
+          <div class="row lg-padding-top flex-steps">
+            <div class="col-xs-6 col-md-9 mx-auto">
+              <h5>4. Interview with confidence</h5>
+              <p>We’ll get on the phone to provide free interview prep so that you’ll go in feeling your best self.</p>
+            </div>
+            <div class="col-md-3 home-icons">
+              <%=image_tag("coachingicon.png")%>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="hidden-md-up">
+          <div class="row lg-padding-top flex-steps">
+            <div class="col-md-3 home-icons">
+              <%=image_tag("coachingicon.png")%>
+            </div>
+            <div class="col-xs-6 col-md-9 mx-auto">
+              <h5>4. Interview with confidence</h5>
+              <p>We’ll get on the phone to provide free interview prep so that you’ll go in feeling your best self.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
