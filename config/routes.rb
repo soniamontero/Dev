@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'company/company_job_new'
 
+  get 'company/company_job_new_review'
+
   get 'company/company_job_show'
 
   get 'company/company_job_matched'
