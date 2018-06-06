@@ -1,35 +1,19 @@
-<div id='nav' class="navbar-container">
-  <div id="NavContent" class="navbar-content">
-
-    <div class='nav-left'>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a href="/">
-      <img id="Logo" class="small-size" src="/assets/flock_logo.png" alt="Flock logo">
+      <img class="navbar-brand small-size" id="Logo" class="small-size" src="/assets/flock_logo.png" alt="Flock logo">
     </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
 
-    </div>
-
-    <ul class='nav-right letter-spacing hidden-sm-down'>
-      <li id='NavJobs' class="nav-right-padding"><a>Jobs</a></li>
-      <li id='NavEmployers' class="nav-right"><a>For employers</a></li>
-      <% if false %>
-      <%if current_user %>
-      <li> <%= link_to 'Log Out', destroy_user_session_path %></li>
-      <% else %>
-      <li><%= link_to 'Sign In', new_user_session_path %></li>
-      <% end %>
-      <% end %>
-
-    </ul>
-
-    <div class="dropdown hidden-md-up">
-      <button class="btn-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-        <li><a>Jobs</a></li>
-        <li><a>For employers</a></li>
-        <li><%= link_to "Log out", destroy_user_session_path,:method => :delete %></li>
-      </div>
-    </div>
-
-  </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Jobs<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">For Employers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
