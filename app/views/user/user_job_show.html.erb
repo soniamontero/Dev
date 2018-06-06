@@ -1,2 +1,40 @@
-<h1>User#user_job_show</h1>
-<p>Find me in app/views/user/user_job_show.html.erb</p>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Job details -->
+    <div class="col-sm-12 col-md-6">
+      <h5>Job Title</h5>
+      <h6>Company Industry</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Location</h6>
+      <p>Description of the job and of the company. Lorem ipsum dolor amet humblebrag seitan pok pok, organic etsy wayfarers dreamcatcher taiyaki scenester pickled messenger bag synth. Sriracha four dollar toast artisan try-hard flexitarian. <br> Leggings tattooed flannel listicle you probably haven't heard of them etsy synth. Taiyaki cred austin live-edge mlkshk, banh mi everyday carry kogi thundercats waistcoat keffiyeh. Hell of church-key chia cardigan raw denim blog schlitz squid small batch gastropub health goth cronut letterpress. Single-origin coffee glossier offal, meditation twee ramps hell of viral actually fanny pack franzen. Etsy portland tote bag, dreamcatcher photo booth knausgaard XOXO enamel pin whatever.</p>
+
+      <h6>Skills</h6>
+
+      <h6>Benefits</h6>
+      <h6>Salary</h6>
+      <h6>Sponsorship</h6>
+
+    </div>
+
+    <!-- Application -->
+    <div class="col-sm-12 col-md-6">
+
+      <h5>Application</h5>
+
+      <form>
+        <div class="form-group">
+          <label for="applicationAddResume">Add your resume</label>
+          <input type="file" class="form-control-file" id="applicationAddResume">
+          <label for="applicationAddCoverLetter">Add your cover letter</label>
+          <input type="file" class="form-control-file" id="applicationAddCoverLetter">
+          <label for="applicationMessageRecruiter">Write a message to the recruiter</label>
+          <textarea class="form-control" id="applicationMessageRecruiter" rows="3" placeholder="" value="" required=""></textarea>
+          <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Apply</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+  <div class="btn btn-primary">Back</div>
+</div>
