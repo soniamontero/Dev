@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'company/company_dashboard'
 
+  get 'company/company_job_new'
+
   get 'company/company_job_show'
 
   get 'company/company_job_matched'

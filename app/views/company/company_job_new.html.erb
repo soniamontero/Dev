@@ -1,0 +1,204 @@
+<div class="bg-light">
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Add a new Job</h2>
+      <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="mb-3">New Job Position</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-12 mb-12">
+              <label for="jobTitle">Job title</label>
+              <input type="text" class="form-control" id="jobTitle" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid job title is required.
+              </div>
+            </div>
+            <div class="col-md-12 mb-12">
+              <label for="jobDescription">Job description</label>
+              <textarea class="form-control" id="jobDescription" rows="3" placeholder="" value="" required=""></textarea>
+              <div class="invalid-feedback">
+                Valid job description is required.
+              </div>
+            </div>
+          </div>
+          <br>
+          <h4 class="mb-3">Location</h4>
+          <div class="row">
+            <div class="col-md-12">
+
+
+              <label>Is the job remote?</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="jobIsRemote" name="remoteJob" class="custom-control-input">
+                <label class="custom-control-label" for="jobIsRemote">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="jobIsNotRemote" name="remoteJob" class="custom-control-input">
+                <label class="custom-control-label" for="jobIsNotRemote">No</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="address">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Los Angeles" required="">
+            <div class="invalid-feedback">
+              Please enter a city.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="input-medium bfh-countries" data-country="US" id="country" required=""></select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <br>
+          <h4 class="mb-3">Details</h4>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="maxSalary">Maximum Salary</label>
+              <input type="text" class="form-control" id="maxSalary" placeholder="" required="">
+              <div class="invalid-feedback">
+                Maximum salary is required
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="employementType">Employement Type</label>
+              <select class="custom-select d-block w-100" id="employementType" required="">
+                <option value="">Choose...</option>
+                <option>Full-time contract</option>
+                <option>Part-time contract</option>
+                <option>Fixed-term contract</option>
+                <option>Apprenticeship</option>
+                <option>Internship</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide an employement type.
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <hr class="mb-4">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="canSponsor">
+                <label class="custom-control-label" for="canSponsor">Can you provide US work permit sponsorship?</label>
+              </div>
+              <hr class="mb-4">
+            </div>
+
+
+            <div class="col-md-12">
+
+              <label for="jobBenefits">Job benefits</label>
+
+              <select class="custom-select" size="5" id="jobBenefits">
+                <option selected>Beach Within 60 Minutes</option>
+                <option value="1">Office Dogs</option>
+                <option value="2">Equity</option>
+                <option value="3">Remote</option>
+                <option value="4">30+ Days Parental Leave</option>
+                <option value="5">60+ Days Parental Leave</option>
+                <option value="6">90+ Days Parental Leave</option>
+                <option value="7">Flexible Hours</option>
+                <option value="8">Social Mission</option>
+                <option value="9">Environmental Mission</option>
+                <option value="10">401(k)</option>
+                <option value="11">100\% Covered Health Insurance</option>
+                <option value="12">80\%+ Covered Health Insurance</option>
+                <option value="13">Dental Insurance</option>
+                <option value="14">Vision Insurance</option>
+                <option value="15">Life Insurance</option>
+                <option value="16">Trans-Inclusive Healthcare</option>
+                <option value="17">Professional Development Budget</option>
+              </select>
+
+              <label for="companyCulture">Company culture</label>
+
+              <select class="custom-select" size="3" id="companyCulture">
+                <option selected>In-Office Gym</option>
+                <option value="1">Office Dogs</option>
+                <option value="2">Equity</option>
+                <option value="17">Professional Development Budget</option>
+              </select>
+            </div>
+
+          </div>
+
+
+        <br>
+        <h4 class="mb-3">Skills and Levels</h4>
+        <div class="col-md-12">
+          Blablablabla
+        </div>
+
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to review</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/vendor/holder.min.js"></script>
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+  </div>
