@@ -1,2 +1,130 @@
-<h1>Company#company_job_matched</h1>
-<p>Find me in app/views/company/company_job_matched.html.erb</p>
+<div class="container-fluid">
+  <div class="row">
+    <!-- User's details -->
+    <div class="col-xs-12 col-md-5 border-right">
+
+      <div class="row mx-auto">
+        <div class="col-xs-12 col-md-3 avatar centered">
+          <%= image_tag "jordan_fmf.jpeg" %>
+        </div>
+
+        <div class="col-xs-12 col-md-9 centered">
+          <h4>Jordan Smith</h4>
+          <i class="fab fa-github fa-2x" style="color: #ffa67b; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
+          <i class="fab fa-linkedin fa-2x" style="color: #ffa67b; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
+        </div>
+      </div>
+
+      <div class="row mx-auto">
+        <div class="col-md-12 px-8">
+          Drinking vinegar meh gastropub pork belly tumblr photo booth truffaut la croix, salvia meggings disrupt occupy wolf tilde artisan. Sriracha banh mi fam flannel craft beer.
+          Yuccie aesthetic af shaman, seitan listicle everyday carry slow-carb master cleanse YOLO fixie pok pok. Fixie street art hoodie craft beer tbh tacos offal kickstarter hell of pitchfork organic.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h6>FIRST NAME SKILLS</h6>
+          <!-- Matched skills come first on the list -->
+          <ul>
+            <b><li>Clojure - 4</li></b>
+            <b><li>Ruby - 4</li></b>
+            <b><li>HTML - 2</li></b>
+            <li>PHP - 3</li>
+            <li>CSS - 2</li>
+            <li>Wordpress - 1</li>
+            <li>Javascript - 2</li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <h6>JOB REQUIRED SKILLS</h6>
+          <!-- Matched skills come first on the list -->
+          <ul>
+            <li>Clojure - 3</li>
+            <li>Ruby - 3</li>
+            <li>HTML - 2</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Application -->
+    <div class="col-xs-12 col-md-7">
+
+      <h2 class='centered'>Application</h2>
+
+      <!-- Large modal -->
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6">
+          <h5>Resume</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
+          <button type="button" class="btn btn-primary">Download</button>
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                PREVIEW OF THE RESUMEEEEE
+                <br>BLA
+                <br>BLA
+                <br>BLA
+                <br>BLA
+                <br>BLA
+                <br>BLA
+                <button type="button" class="btn btn-primary">Download the resume</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <h5>Cover Letter</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
+          <button type="button" class="btn btn-primary">Download</button>
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                PREVIEW OF THE COVER LETTER
+                <br>BLA
+                <br>BLA
+                <br>BLA
+                <button type="button" class="btn btn-primary">Download the cover letter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mx-auto">
+        <div class="col-md-12 px-8">
+          <h5>Message from Jordan</h5>
+          Drinking vinegar meh gastropub pork belly tumblr photo booth truffaut la croix, salvia meggings disrupt occupy wolf tilde artisan. Sriracha banh mi fam flannel craft beer.
+          Yuccie aesthetic af shaman, seitan listicle everyday carry slow-carb master cleanse YOLO fixie pok pok. Fixie street art hoodie craft beer tbh tacos offal kickstarter hell of pitchfork organic.
+        </div>
+      </div>
+
+      <form>
+        <h5>Interested?</h5>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Contact Jordan by email</label>
+          <textarea class="form-control" id="emailToCandidate" rows="5" placeholder="" value="" required=""></textarea>
+          <button type="submit" class="btn btn-primary mb-2">Send email</button>
+
+        </div>
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+</div>
