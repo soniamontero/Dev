@@ -1,0 +1,45 @@
+.matched-jobs {
+  li {
+    list-style: none;
+  }
+}
+
+.matched-job {
+  align-content: center;
+  border: 1px solid #d0d0d0;
+  background-color: white;
+  min-height: 190px;
+  max-width: 880px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .row {
+    height: 100%;
+  }
+
+}
+
+.matched-job-titles {
+  text-align: center;
+  border-right: 1px solid gray;
+}
+
+.matched-job-skills {
+  padding-left: 40px;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    background-color: #ffa67b !important;
+
+}
+    a.nav-link {
+      color: gray;
+    }
