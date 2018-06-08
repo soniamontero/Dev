@@ -1,2 +1,182 @@
-<h1>Company#company_dashboard</h1>
-<p>Find me in app/views/company/company_dashboard.html.erb</p>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-3 d-none pt-3 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <div class="panel-heading">
+          <h5 class="panel-title">Filter by</h5>
+        </div>
+
+        <div class="panel-body" >
+
+        </div>
+        <ul class="list-group" style="font-size: 13px;">
+          <li class="list-group-item">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Most recent first
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="checkbox" >
+              <label>
+                <input type="checkbox" value="">
+                Most skilled first
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="checkbox"  >
+              <label>
+                <input type="checkbox" value="">
+                Most experienced first
+              </label>
+            </div>
+          </li>
+        </ul>
+
+      </h6>
+      <p>CLEAR FILTERS</p>
+
+    </div>
+  </nav>
+
+  <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4" style="min-height:100vh">
+
+    <div class="container-fluid col-md-9">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> Language here about the values FMF brings with advanced searching tools. <br>/!\ Add a "Don't show this message again" box. /!\
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+      <h1 class="h2">Dashboard</h1>
+    </div>
+
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link active" href="#">Applications</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact In Progress</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">Processed</a>
+    </nav>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="card p-4 m-1 bg-primary text-white" style="min-width:450px; width: 40vw; max-width:550px;">
+        <div class="row centered justify-content-center">
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "jordan_fmf.jpeg" %>
+            </div>
+            <h5 class="card-title">Candidate</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "peopleoffice.jpg" %>
+            </div>
+            <h5 class="card-title">Job Title</h5>
+          </div>
+          <a href="#" class="btn btn-success mt-2">See application</a>
+        </div>
+      </div>
+
+      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
+        <div class="row centered justify-content-center">
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "jordan_fmf.jpeg" %>
+            </div>
+            <h5 class="card-title">Candidate</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "peopleoffice.jpg" %>
+            </div>
+            <h5 class="card-title">Job Title</h5>
+          </div>
+          <a href="#" class="btn btn-primary mt-2">See application</a>
+        </div>
+      </div>
+
+      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
+        <div class="row centered justify-content-center">
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "jordan_fmf.jpeg" %>
+            </div>
+            <h5 class="card-title">Candidate</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "peopleoffice.jpg" %>
+            </div>
+            <h5 class="card-title">Job Title</h5>
+          </div>
+          <a href="#" class="btn btn-primary mt-2">See application</a>
+        </div>
+      </div>
+
+      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
+        <div class="row centered justify-content-center">
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "jordan_fmf.jpeg" %>
+            </div>
+            <h5 class="card-title">Candidate</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "peopleoffice.jpg" %>
+            </div>
+            <h5 class="card-title">Job Title</h5>
+          </div>
+          <a href="#" class="btn btn-primary mt-2">See application</a>
+        </div>
+      </div>
+
+      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
+        <div class="row centered justify-content-center">
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "jordan_fmf.jpeg" %>
+            </div>
+            <h5 class="card-title">Candidate</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="avatar centered">
+              <%= image_tag "peopleoffice.jpg" %>
+            </div>
+            <h5 class="card-title">Job Title</h5>
+          </div>
+          <a href="#" class="btn btn-primary mt-2">See application</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+</div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+
+  <script>
+    function toggleChevron(e) {
+      $(e.target)
+      .prev('.panel-heading')
+      .find("i.indicator")
+      .toggleClass('fa-caret-down fa-caret-right');
+    }
+    $('#accordion').on('hidden.bs.collapse', toggleChevron);
+    $('#accordion').on('shown.bs.collapse', toggleChevron);
+  </script>

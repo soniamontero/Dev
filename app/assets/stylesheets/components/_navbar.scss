@@ -1,5 +1,9 @@
 .navbar {
-    img {
+  img {
     max-width: 35px;
   }
+}
+
+#Logo, #NavJobs, #NavEmployers {
+  transition: all 0.6s;
 }
