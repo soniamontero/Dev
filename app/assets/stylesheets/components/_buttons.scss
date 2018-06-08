@@ -17,6 +17,14 @@
   transition: all 0.6s ease 0s;
 }
 
+.btn-orange:hover {
+  background-color: #ff935f;
+  border: 1px solid #ff935f;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+}
+
 .btn-orange.joinbutton {
   padding: 10px 15px;
   height: 45px;
