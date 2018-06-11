@@ -18,6 +18,12 @@
   border-radius: 0.25rem
 }
 
+@media (max-width: 900px) {
+  .btn-orange.btn-apply {
+    width: 90px
+  }
+}
+
 .btn-orange:hover {
   background-color: #ff935f;
   border: 1px solid #ff935f;
