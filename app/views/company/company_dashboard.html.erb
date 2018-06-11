@@ -53,130 +53,165 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-      <h1 class="h2">Dashboard</h1>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+      <h1 style="color:gray;">Dashboard</h1>
     </div>
 
-    <nav class="nav nav-pills flex-column flex-sm-row">
+    <nav class="nav nav-pills flex-column flex-sm-row mb-4">
       <a class="flex-sm-fill text-sm-center nav-link active" href="#">Applications</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact In Progress</a>
       <a class="flex-sm-fill text-sm-center nav-link" href="#">Processed</a>
     </nav>
 
-    <hr>
+    <div class="container matched-jobs">
 
-    <div class="row">
+      <div class="row centered matched-job">
 
-      <div class="card p-4 m-1 bg-primary text-white" style="min-width:450px; width: 40vw; max-width:550px;">
-        <div class="row centered justify-content-center">
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "jordan_fmf.jpeg" %>
-            </div>
-            <h5 class="card-title">Candidate</h5>
-          </div>
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "peopleoffice.jpg" %>
-            </div>
-            <h5 class="card-title">Job Title</h5>
-          </div>
-          <a href="#" class="btn btn-success mt-2">See application</a>
+        <div class="col-xs-12 col-sm-12 col-md-2">
+          <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
+          <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
+         <h5 class="row matched-job-skills-title">Matched job</h5>
+         <h4>Senior Javascript Engineer</h4>
+         <h5 class="text-muted">Denver</h5>
+       </div>
+
+       <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
+         <h5 class="row matched-job-skills-title">Matching skills</h5>
+         <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Javascript</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Rails</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
-        <div class="row centered justify-content-center">
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "jordan_fmf.jpeg" %>
-            </div>
-            <h5 class="card-title">Candidate</h5>
-          </div>
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "peopleoffice.jpg" %>
-            </div>
-            <h5 class="card-title">Job Title</h5>
-          </div>
-          <a href="#" class="btn btn-primary mt-2">See application</a>
-        </div>
-      </div>
-
-      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
-        <div class="row centered justify-content-center">
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "jordan_fmf.jpeg" %>
-            </div>
-            <h5 class="card-title">Candidate</h5>
-          </div>
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "peopleoffice.jpg" %>
-            </div>
-            <h5 class="card-title">Job Title</h5>
-          </div>
-          <a href="#" class="btn btn-primary mt-2">See application</a>
-        </div>
-      </div>
-
-      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
-        <div class="row centered justify-content-center">
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "jordan_fmf.jpeg" %>
-            </div>
-            <h5 class="card-title">Candidate</h5>
-          </div>
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "peopleoffice.jpg" %>
-            </div>
-            <h5 class="card-title">Job Title</h5>
-          </div>
-          <a href="#" class="btn btn-primary mt-2">See application</a>
-        </div>
-      </div>
-
-      <div class="card p-4 m-1" style="min-width:450px; width: 40vw; max-width:550px;">
-        <div class="row centered justify-content-center">
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "jordan_fmf.jpeg" %>
-            </div>
-            <h5 class="card-title">Candidate</h5>
-          </div>
-          <div class="col-sm-6">
-            <div class="avatar centered">
-              <%= image_tag "peopleoffice.jpg" %>
-            </div>
-            <h5 class="card-title">Job Title</h5>
-          </div>
-          <a href="#" class="btn btn-primary mt-2">See application</a>
-        </div>
+      <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
+        <button class="btn-orange btn-apply">View</button>
       </div>
 
     </div>
 
+          <div class="row centered matched-job">
 
-  </main>
+        <div class="col-xs-12 col-sm-12 col-md-2">
+          <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
+          <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
+         <h5 class="row matched-job-skills-title">Matched job</h5>
+         <h4>Senior Javascript Engineer</h4>
+         <h5 class="text-muted">Denver</h5>
+       </div>
+
+       <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
+         <h5 class="row matched-job-skills-title">Matching skills</h5>
+         <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Javascript</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Rails</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
+        <button class="btn-orange btn-apply">View</button>
+      </div>
+
+    </div>
+
+          <div class="row centered matched-job">
+
+        <div class="col-xs-12 col-sm-12 col-md-2">
+          <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
+          <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
+         <h5 class="row matched-job-skills-title">Matched job</h5>
+         <h4>Senior Javascript Engineer</h4>
+         <h5 class="text-muted">Denver</h5>
+       </div>
+
+       <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
+         <h5 class="row matched-job-skills-title">Matching skills</h5>
+         <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Javascriptfefjao fjozkfpakep</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Rails</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
+        <button class="btn-orange btn-apply">View</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+
+
+</main>
 </div>
 </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="../../assets/js/vendor/popper.min.js"></script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
 
-  <script>
-    function toggleChevron(e) {
-      $(e.target)
-      .prev('.panel-heading')
-      .find("i.indicator")
-      .toggleClass('fa-caret-down fa-caret-right');
-    }
-    $('#accordion').on('hidden.bs.collapse', toggleChevron);
-    $('#accordion').on('shown.bs.collapse', toggleChevron);
-  </script>
+<script>
+  function toggleChevron(e) {
+    $(e.target)
+    .prev('.panel-heading')
+    .find("i.indicator")
+    .toggleClass('fa-caret-down fa-caret-right');
+  }
+  $('#accordion').on('hidden.bs.collapse', toggleChevron);
+  $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
