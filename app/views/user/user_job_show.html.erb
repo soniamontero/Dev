@@ -1,40 +1,141 @@
-<div class="container-fluid">
+<div class="container-fluid user-job-show-container">
   <div class="row">
     <!-- Job details -->
-    <div class="col-sm-12 col-md-6">
-      <h5>Job Title</h5>
-      <h6>Company Industry</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Location</h6>
-      <p>Description of the job and of the company. Lorem ipsum dolor amet humblebrag seitan pok pok, organic etsy wayfarers dreamcatcher taiyaki scenester pickled messenger bag synth. Sriracha four dollar toast artisan try-hard flexitarian. <br> Leggings tattooed flannel listicle you probably haven't heard of them etsy synth. Taiyaki cred austin live-edge mlkshk, banh mi everyday carry kogi thundercats waistcoat keffiyeh. Hell of church-key chia cardigan raw denim blog schlitz squid small batch gastropub health goth cronut letterpress. Single-origin coffee glossier offal, meditation twee ramps hell of viral actually fanny pack franzen. Etsy portland tote bag, dreamcatcher photo booth knausgaard XOXO enamel pin whatever.</p>
+    <div class="col-sm-12 col-md-6 job-details-container">
 
-      <h6>Skills</h6>
+      <div class="job-show-titles">
+       <h4 class="row justify-content-center underlined" style=>Android Developer</h4>
+     </div>
 
-      <h6>Benefits</h6>
-      <h6>Salary</h6>
-      <h6>Sponsorship</h6>
+     <h5 class="centered">Blogging Platform</h5>
+     <h6 class="text-muted centered">New York</h6>
+     <p class="job-description">Description of the job and of the company. Lorem ipsum dolor amet humblebrag seitan pok pok, organic etsy wayfarers dreamcatcher taiyaki scenester pickled messenger bag synth. Sriracha four dollar toast artisan try-hard flexitarian. <br><br> Leggings tattooed flannel listicle you probably haven't heard of them etsy synth. Taiyaki cred austin live-edge mlkshk, banh mi everyday carry kogi thundercats waistcoat keffiyeh. Hell of church-key chia cardigan raw denim blog schlitz squid small batch gastropub health goth cronut letterpress. Single-origin coffee glossier offal, meditation twee ramps hell of viral actually fanny pack franzen. Etsy portland tote bag, dreamcatcher photo booth knausgaard XOXO enamel pin whatever.</p>
 
-    </div>
+     <div class="row centered justify-content-center pt-4 pb-4">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 job-show-skills">
+       <div class="job-show-titles">
+         <h5 class="h6 row justify-content-center underlined-orange pt-3">Main skills</h5>
+       </div>
+       <div class="row">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Javascript</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Rails</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <!-- Application -->
-    <div class="col-sm-12 col-md-6">
+      <div class="row">
 
-      <h5>Application</h5>
-
-      <form>
-        <div class="form-group">
-          <label for="applicationAddResume">Add your resume</label>
-          <input type="file" class="form-control-file" id="applicationAddResume">
-          <label for="applicationAddCoverLetter">Add your cover letter</label>
-          <input type="file" class="form-control-file" id="applicationAddCoverLetter">
-          <label for="applicationMessageRecruiter">Write a message to the recruiter</label>
-          <textarea class="form-control" id="applicationMessageRecruiter" rows="3" placeholder="" value="" required=""></textarea>
-          <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Apply</button>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 col-lg-12">
+          <div class="job-show-titles">
+           <h5 class="h6 row justify-content-center underlined-orange pt-3">Salary match</h5>
+         </div>
+         <div class="row justify-content-center">
+          <p class="centered">Yes</p>
         </div>
-      </form>
+      </div>
 
-
+      <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 col-lg-12">
+        <div class="job-show-titles">
+         <h5 class="h6 row justify-content-center underlined-orange pt-3">Sponsorship</h5>
+       </div>
+       <div class="row justify-content-center">
+        <p class="centered">Yes</p>
+      </div>
     </div>
   </div>
-  <div class="btn btn-primary">Back</div>
+
 </div>
+</div>
+
+
+<div class="row pb-4">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 mb-3">
+    <div class="job-show-titles">
+     <h5 class="h6 row justify-content-center underlined-orange pt-3">Benefits</h5>
+   </div>
+   <div class="row">
+    <div class="tagcloud pt-3">
+      <ul>
+        <li><a href="#">Office Dog</a></li>
+        <li><a href="#">Equity</a></li>
+        <li><a href="#">401(k)</a></li>
+        <li><a href="#">Unlimited Vacation</a></li>
+        <li><a href="#">Beach Within 60 Minutes</a></li>
+        <li><a href="#">Professional Development Budget</a></li>
+        <li><a href="#">Life Insurance</a></li>
+        <li><a href="#">Vision Insurance</a></li>
+        <li><a href="#">100% Covered Health Insurance</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!--       <div class="row">
+        <div class="col-xs-12 col-sm-12">
+        <%= image_tag "peopleoffice.jpg", class: "job-photo" %>
+        </div>
+      </div> -->
+
+    </div>
+
+
+    <!-- Application -->
+    <div class="col-sm-12 col-md-6 job-application-container">
+      <div class="job-show-titles">
+       <h4 class="row justify-content-center underlined-orange-dark" style=>Apply to this job</h4>
+     </div>
+
+     <form>
+      <div class="form-group pt-4">
+
+        <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="applicationAddResume">
+            <label class="custom-file-label" for="applicationAddResume">Upload your resume</label>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="">Upload</span>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="applicationAddCoverLetter">
+            <label class="custom-file-label" for="applicationAddCoverLetter">Upload a cover letter (optionnal)</label>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="">Upload</span>
+          </div>
+        </div>
+        <label for="applicationMessageRecruiter">Write a message to the recruiter</label>
+        <textarea class="form-control" id="applicationMessageRecruiter" rows="3" placeholder="" value="" required=""></textarea>
+        <hr class="mb-4">
+        <button class="btn-orange" style="display: block; width: 100%; margin: 0;" type="submit">Apply</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+<div class="btn-orange btn-back">Back</div>
+</div>
+
+<script>
+  $('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop().slice(0,22)+"...";
+   $(this).next('.custom-file-label').addClass("selected").html(fileName);
+ });
+</script>

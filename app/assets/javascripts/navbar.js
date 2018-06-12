@@ -18,6 +18,6 @@ function growShrinkNavBar() {
     Logo.style.width = '45px';
     NavJobs.style.fontSize = '14px';
     NavEmployers.style.fontSize = '14px';
-    NavContent.style.height = '70px';
+    NavContent.style.height = '60px';
   }
 }
