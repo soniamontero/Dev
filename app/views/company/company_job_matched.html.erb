@@ -1,69 +1,103 @@
-<div class="container-fluid">
+<div class="container-fluid company-job-show-container">
   <div class="row">
-    <!-- User's details -->
-    <div class="col-xs-12 col-md-5 border-right">
-<h2 class='centered'>Candidate</h2>
-      <div class="row mx-auto">
+    <!-- user details -->
+    <div class="col-sm-12 col-md-6 user-details-container">
+
+      <div class="user-show-titles">
+        <h4 class="row justify-content-center underlined-orange-dark" style=>Candidate</h4>
+      </div>
+
+      <div class="row mx-auto user-introduction">
         <div class="col-xs-12 col-md-3 avatar centered">
           <%= image_tag "jordan_fmf.jpeg" %>
         </div>
 
         <div class="col-xs-12 col-md-9 centered">
-          <h4>Jordan Smith</h4>
-          <i class="fab fa-github fa-2x" style="color: #ffa67b; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
-          <i class="fab fa-linkedin fa-2x" style="color: #ffa67b; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
-        </div>
-      </div>
-
-      <div class="row mx-auto">
-        <div class="col-md-12 px-8">
-          Drinking vinegar meh gastropub pork belly tumblr photo booth truffaut la croix, salvia meggings disrupt occupy wolf tilde artisan. Sriracha banh mi fam flannel craft beer.
-          Yuccie aesthetic af shaman, seitan listicle everyday carry slow-carb master cleanse YOLO fixie pok pok. Fixie street art hoodie craft beer tbh tacos offal kickstarter hell of pitchfork organic.
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <h6>FIRST NAME SKILLS</h6>
-          <!-- Matched skills come first on the list -->
-          <ul>
-            <b><li>Clojure - 4</li></b>
-            <b><li>Ruby - 4</li></b>
-            <b><li>HTML - 2</li></b>
-            <li>PHP - 3</li>
-            <li>CSS - 2</li>
-            <li>Wordpress - 1</li>
-            <li>Javascript - 2</li>
-          </ul>
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <h6>JOB REQUIRED SKILLS</h6>
-          <!-- Matched skills come first on the list -->
-          <ul>
-            <li>Clojure - 3</li>
-            <li>Ruby - 3</li>
-            <li>HTML - 2</li>
-          </ul>
+          <h4>Jordan Camelia</h4>
+          <i class="fab fa-github fa-2x" style="color: #24292e; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
+          <i class="fab fa-linkedin fa-2x" style="color: #0073b1; text-decoration: none; margin-right: 1vh; margin-left: 1vh;"></i>
         </div>
       </div>
 
 
+      <p class="user-description">Description of the user profile and of the company. Lorem ipsum dolor amet humblebrag seitan pok pok, organic etsy wayfarers dreamcatcher taiyaki scenester pickled messenger bag synth. Sriracha four dollar toast artisan try-hard flexitarian.</p>
+
+      <div class="row centered justify-content-center pt-4 pb-5">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-md-12 user-matched-skills">
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-md-12">
+             <table class="table">
+              <tbody>
+               <tr>
+                <td colspan="2">
+                  <div class="user-show-titles">
+                   <h5 class="h6 justify-content-center underlined-top-orange mb-0 pb-0 pt-3">Jordan's skills</h5>
+                 </div>
+               </td>
+               <td colspan="2">
+                <div class="user-show-titles">
+                 <h5 class="h6 justify-content-center underlined-top-orange mb-0 pb-0 pt-3">Job's skills</h5>
+               </div>
+             </td>
+
+           </tr>
+           <tr>
+            <td>Javascript</td>
+            <td>4</td>
+            <td>Javascript</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>3</td>
+            <td>CSS</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>3</td>
+            <td>HTML</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Rails</td>
+            <td>2</td>
+            <td>Rails</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Cybersecurity</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
+  </div>
+</div>
+</div>
+</div>
+<!--       <div class="row">
+        <div class="col-xs-12 col-sm-12">
+        <%= image_tag "peopleoffice.jpg", class: "user-photo" %>
+        </div>
+      </div> -->
 
-    <!-- Application -->
-    <div class="col-xs-12 col-md-7">
 
-      <h2 class='centered'>Application</h2>
 
-      <!-- Large modal -->
-      <div class="row">
+      <!-- Application -->
+      <div class="col-sm-12 col-md-6 job-application-container">
+        <div class="user-show-titles">
+         <h4 class="row justify-content-center underlined" style=>Application</h4>
+       </div>
+       <!-- Large modal -->
+       <div class="row pt-4 pb-4">
 
-        <div class="col-xs-12 col-sm-6">
-          <h5>Resume</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
-          <button type="button" class="btn btn-primary">Download</button>
+        <div class="col-xs-12 col-sm-6 centered">
+          <h4 class='h6'>Resume</h4>
+          <button type="button" class="btn-orange btn-application-small" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
+          <button type="button" class="btn-orange btn-application-small">Download</button>
           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
@@ -74,16 +108,16 @@
                 <br>BLA
                 <br>BLA
                 <br>BLA
-                <button type="button" class="btn btn-primary">Download the resume</button>
+                <button type="button" class="btn-orange btn-application-small">Download</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6">
-          <h5>Cover Letter</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
-          <button type="button" class="btn btn-primary">Download</button>
+        <div class="col-xs-12 col-sm-6 centered">
+          <h4 class='h6'>Cover Letter</h4>
+          <button type="button" class="btn-orange btn-application-small" data-toggle="modal" data-target=".bd-example-modal-lg">Preview</button>
+          <button type="button" class="btn-orange btn-application-small">Download</button>
           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
@@ -91,7 +125,7 @@
                 <br>BLA
                 <br>BLA
                 <br>BLA
-                <button type="button" class="btn btn-primary">Download the cover letter</button>
+                <button type="button" class="btn-orange btn-application-small">Download</button>
               </div>
             </div>
           </div>
@@ -99,32 +133,45 @@
 
       </div>
 
-      <div class="row mx-auto">
+      <div class="row">
         <div class="col-md-12 px-8">
-          <h5>Message from Jordan</h5>
+          <h4 class='h6'>Message from Jordan</h4>
           Drinking vinegar meh gastropub pork belly tumblr photo booth truffaut la croix, salvia meggings disrupt occupy wolf tilde artisan. Sriracha banh mi fam flannel craft beer.
           Yuccie aesthetic af shaman, seitan listicle everyday carry slow-carb master cleanse YOLO fixie pok pok. Fixie street art hoodie craft beer tbh tacos offal kickstarter hell of pitchfork organic.
         </div>
       </div>
 
-      <form>
-        <h5>Interested?</h5>
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="user-show-titles">
+              <h5 class="h6 justify-content-center underlined-top-orange mb-0 pb-0 pt-3"></h5>
+            </div>
+            <div class="form-group">
+              <h4 class='h6'>Contact Jordan by email</h4>
+              <textarea class="form-control" id="emailToCandidate" rows="5" placeholder="" value="" required=""></textarea>
+              <div class="centered">
+                <button type="submit" class="btn-orange btn-application mx-auto">Send</button>
+              </div>
 
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Contact Jordan by email</label>
-          <textarea class="form-control" id="emailToCandidate" rows="5" placeholder="" value="" required=""></textarea>
-          <button type="submit" class="btn btn-primary mb-2">Send email</button>
+            </div>
+          </form>
 
         </div>
-      </form>
-
-
-
+      </div>
 
     </div>
   </div>
-
-
-
-
+  <div class="btn-orange btn-back mt-5 mb-">Back</div>
 </div>
+
+<script>
+  $('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop().slice(0,22)+"...";
+   $(this).next('.custom-file-label').addClass("selected").html(fileName);
+ });
+
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
