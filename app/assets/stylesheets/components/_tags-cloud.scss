@@ -8,8 +8,6 @@
   display: inline-block;
   margin: 0 .3em .3em 0;
   padding: 0;
-}
-.tagcloud ul li a {
   display: inline-block;
   height: 28px;
   line-height: 28px;
@@ -26,8 +24,10 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.tagcloud ul li a:hover {
+
+.tagcloud ul li:hover {
   background-color: #ffa67b;
   border: 1px solid #ffa67b;
   color: #fff;
+  cursor: default;
 }

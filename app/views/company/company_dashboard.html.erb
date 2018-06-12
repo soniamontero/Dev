@@ -1,69 +1,137 @@
-<div class="container-fluid">
+<div class="container-fluid company-dashboard-container">
   <div class="row">
     <nav class="col-md-3 d-none pt-3 d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
+
         <div class="panel-heading">
-          <h5 class="panel-title">Filter by</h5>
+          <h5 class="panel-title">Filter by candidate</h5>
         </div>
 
-        <div class="panel-body" >
-
-        </div>
         <ul class="list-group" style="font-size: 13px;">
           <li class="list-group-item">
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="">
+                <input type="radio" value="">
                 Most recent first
               </label>
             </div>
           </li>
           <li class="list-group-item">
-            <div class="checkbox" >
+            <div class="radio" >
               <label>
-                <input type="checkbox" value="">
+                <input type="radio" value="">
                 Most skilled first
               </label>
             </div>
           </li>
           <li class="list-group-item">
-            <div class="checkbox"  >
+            <div class="radio"  >
               <label>
-                <input type="checkbox" value="">
+                <input type="radio" value="">
                 Most experienced first
               </label>
             </div>
           </li>
         </ul>
 
-      </h6>
-      <p>CLEAR FILTERS</p>
+        <div class="panel-heading">
+          <h5 class="panel-title pt-4">Filter by job</h5>
+        </div>
 
-    </div>
-  </nav>
+        <ul class="list-group" style="font-size: 13px;">
+          <li class="list-group-item">
+            <div class="radio">
+              <label>
+                <input type="radio" value="">
+                Alphabetically
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="radio" >
+              <label>
+                <input type="radio" value="">
+                Most recently added
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="radio"  >
+              <label>
+                <input type="radio" value="">
+                Most applied
+              </label>
+            </div>
+          </li>
+        </ul>
 
-  <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4" style="min-height:100vh">
-
-    <div class="container-fluid col-md-9">
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> Language here about the values FMF brings with advanced searching tools. <br>/!\ Add a "Don't show this message again" box. /!\
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <p class="centered pt-3">CLEAR FILTERS</p>
       </div>
-    </div>
-
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
-      <h1 style="color:gray;">Dashboard</h1>
-    </div>
-
-    <nav class="nav nav-pills flex-column flex-sm-row mb-4">
-      <a class="flex-sm-fill text-sm-center nav-link active" href="#">Applications</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact In Progress</a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="#">Processed</a>
     </nav>
 
-    <div class="container matched-jobs">
+    <main role="main" class="col-md-9 ml-sm-auto pt-3 px-4" style="min-height:100vh">
+
+      <div class="container-fluid col-md-9">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> Language here about the values FMF brings with advanced searching tools. <br>/!\ Add a "Don't show this message again" box. /!\
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+        <h1 style="color:gray;">Dashboard</h1>
+      </div>
+
+      <nav class="nav nav-pills flex-column flex-sm-row mb-4">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Applications</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact In Progress</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#">Processed</a>
+      </nav>
+
+      <div class="container matched-jobs">
+
+        <div class="row centered matched-job">
+
+          <div class="col-xs-12 col-sm-12 col-md-2">
+            <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
+            <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
+           <h5 class="row matched-job-skills-title">Matched job</h5>
+           <h4>Senior Javascript Engineer</h4>
+           <h5 class="text-muted">Denver</h5>
+         </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
+           <h5 class="row matched-job-skills-title">Matching skills</h5>
+           <div class="row">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Javascript</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Rails</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
+          <button class="btn-orange btn-apply">View</button>
+        </div>
+
+      </div>
 
       <div class="row centered matched-job">
 
@@ -106,112 +174,46 @@
 
     </div>
 
-          <div class="row centered matched-job">
+    <div class="row centered matched-job">
 
-        <div class="col-xs-12 col-sm-12 col-md-2">
-          <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
-          <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
-         <h5 class="row matched-job-skills-title">Matched job</h5>
-         <h4>Senior Javascript Engineer</h4>
-         <h5 class="text-muted">Denver</h5>
-       </div>
-
-       <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
-         <h5 class="row matched-job-skills-title">Matching skills</h5>
-         <div class="row">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>Javascript</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Rails</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="col-xs-12 col-sm-12 col-md-2">
+        <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
+        <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
-        <button class="btn-orange btn-apply">View</button>
-      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
+       <h5 class="row matched-job-skills-title">Matched job</h5>
+       <h4>Senior Javascript Engineer</h4>
+       <h5 class="text-muted">Denver</h5>
+     </div>
 
+     <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
+       <h5 class="row matched-job-skills-title">Matching skills</h5>
+       <div class="row">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Javascriptfefjao fjozkfpakep</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Rails</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-          <div class="row centered matched-job">
-
-        <div class="col-xs-12 col-sm-12 col-md-2">
-          <%= image_tag "jordan_fmf.jpeg", class: "job-avatar" %>
-          <p class="pt-2" style="margin-bottom:0;">Jordan Camelia</p>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-4 matched-job-title matched-job-skills matched-job-separator">
-         <h5 class="row matched-job-skills-title">Matched job</h5>
-         <h4>Senior Javascript Engineer</h4>
-         <h5 class="text-muted">Denver</h5>
-       </div>
-
-       <div class="col-xs-12 col-sm-12 col-md-4 matched-job-skills">
-         <h5 class="row matched-job-skills-title">Matching skills</h5>
-         <div class="row">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>Javascriptfefjao fjozkfpakep</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Rails</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
-        <button class="btn-orange btn-apply">View</button>
-      </div>
-
+    <div class="col-xs-12 col-sm-12 col-md-2 col-md-2">
+      <button class="btn-orange btn-apply">View</button>
     </div>
-
   </div>
-
-</div>
-</div>
-</div>
-
-
 </main>
 </div>
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-
-<script>
-  function toggleChevron(e) {
-    $(e.target)
-    .prev('.panel-heading')
-    .find("i.indicator")
-    .toggleClass('fa-caret-down fa-caret-right');
-  }
-  $('#accordion').on('hidden.bs.collapse', toggleChevron);
-  $('#accordion').on('shown.bs.collapse', toggleChevron);
-</script>
