@@ -1,15 +1,15 @@
 .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .form-signup {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .login-form {
@@ -20,6 +20,8 @@
   border: 1px solid #d0d0d0;
   background-color: white;
   margin-top: 3vh;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .login-form-bottom {
@@ -33,6 +35,10 @@
   font-size: 15px;
   line-height: 2;
   text-align: left;
+  margin-bottom: 3vh;
+  margin-right: 10px;
+  margin-left: 10px;
+
   a {
     font-family: Lora;
     color: #42a8b7
