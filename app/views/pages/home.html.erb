@@ -80,11 +80,11 @@
 
 
 <div class="section-03">
-  <h3 class="centered blue-text md-padding-bot">How it works</h2>
+  <h3 class="centered blue-text pt-3 pb-5">How it works</h2>
     <div class="centered">
 
       <div class="row">
-        <div class="col-md-3 home-icons">
+        <div class="col-md-3 home-icons pt-2">
           <%=image_tag("createprofileicon.png")%>
         </div>
         <div class="col-xs-6 col-md-9 mx-auto">
@@ -94,8 +94,8 @@
       </div>
 
       <!-- Since the items ordering on bootstrap doesn't work, hide the wrong content on xs to display the ordered one -->
-      <div class="hidden-sm-down">
-        <div class="row lg-padding-top">
+      <div class="d-none d-md-block">
+        <div class="row pt-5">
           <div class="col-xs-6 col-md-9 mx-auto">
             <h5>2. Search jobs</h5>
             <p>Review job listings and filter lists further to see more or less jobs.</p> </div>
@@ -105,8 +105,8 @@
           </div>
         </div>
 
-        <div class="hidden-md-up">
-          <div class="row lg-padding-top">
+        <div class="d-md-none">
+          <div class="row pt-5">
             <div class="col-md-3 home-icons">
               <%=image_tag("filtericon.png")%>
             </div>
@@ -117,7 +117,7 @@
           </div>
         </div>
 
-        <div class="row lg-padding-top flex-steps">
+        <div class="row flex-steps pt-5">
           <div class="col-md-3 home-icons">
             <%=image_tag("applicationicon.png")%>
           </div>
@@ -128,8 +128,8 @@
         </div>
 
 
-        <div class="hidden-sm-down">
-          <div class="row lg-padding-top flex-steps">
+        <div class="d-none d-md-block">
+          <div class="row flex-steps pt-5">
             <div class="col-xs-6 col-md-9 mx-auto">
               <h5>4. Interview with confidence</h5>
               <p>We’ll get on the phone to provide free interview prep so that you’ll go in feeling your best self.</p>
@@ -141,8 +141,8 @@
         </div>
 
 
-        <div class="hidden-md-up">
-          <div class="row lg-padding-top flex-steps">
+        <div class="d-md-none">
+          <div class="row flex-steps pt-5">
             <div class="col-md-3 home-icons">
               <%=image_tag("coachingicon.png")%>
             </div>
