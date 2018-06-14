@@ -66,9 +66,41 @@
     font-size: 15px;
   }
 }
+}
+
 .btn-orange.btn-apply {
   width: 90px
 }
+
+.btn-orange.btn-see-job {
+  width: 90px;
+  height: 30px;
+  padding: 0;
+}
+
+.btn-orange.btn-edit-job {
+  width: 90px;
+  height: 30px;
+  padding: 0;
+  background-color: #76c0cb;
+  border: 1px solid #76c0cb;
+
+  &:hover {
+    background-color: #3c8a96;
+    border: 1px solid #3c8a96;
+  }
+}
+
+.btn-orange.btn-delete-job {
+  width: 90px;
+  height: 30px;
+  padding: 0;
+  background-color: #797877;
+  border: 1px solid #797877;
+  &:hover {
+    background-color: #3c3b3a;
+    border: 1px solid #3c3b3a;
+  }
 }
 
 @media (min-width: 768px) {

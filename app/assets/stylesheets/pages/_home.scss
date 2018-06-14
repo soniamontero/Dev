@@ -34,6 +34,17 @@
   padding-bottom: 10vh;
 }
 
+.section-5 {
+  margin-right: 15vh;
+  margin-left: 15vh;
+}
+
+.section-5-background {
+  background-color: white;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
 .home-list {
   padding-top: 28vh;
 }
@@ -63,6 +74,17 @@
   }
 }
 
+.resized-logo img {
+  max-width: 120px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#resized-khanacademy img {
+  max-width: 190px;
+}
 
 // Down blue arrow
 

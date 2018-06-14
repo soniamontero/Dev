@@ -10,6 +10,15 @@
   padding-top: 30px;
 }
 
+.company-job-matched-container {
+  padding-top: 30px;
+}
+
 .company-job-show-container {
   padding-top: 30px;
+  max-width: 730px;
+
+  .job-details-container {
+    border: none;
+  }
 }
