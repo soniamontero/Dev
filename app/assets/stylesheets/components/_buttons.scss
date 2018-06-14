@@ -73,3 +73,39 @@
   font-size: 15px;
   transition: all 0.6s ease 0s;
 }
+
+.btn-awaiting {
+  border: 1px solid #b7b7b7;
+  background-color: #b7b7b7;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 1vh;
+}
+
+.btn-read {
+  border: 1px solid #76c0cb;
+  background-color: #76c0cb;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 1vh;
+}
+
+.btn-processed {
+  border: 1px solid #3db39e;;
+  background-color: #3db39e;;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 1vh;
+}
