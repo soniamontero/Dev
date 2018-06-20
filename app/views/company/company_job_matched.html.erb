@@ -1,3 +1,22 @@
+<div class="navbar navbar-expand-md navbar-light fixed-top" id="NavContent" style="background-color: white;">
+  <a href="/">
+    <img class="navbar-brand ml-auto" id="Logo" src="/assets/flock_logo.png" alt="Flock logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end pr-4" id="navbarCollapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to 'Profile', company_company_signup_path, class: "nav-link", id: "NavEmployers" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Settings', company_company_signup_path, class: "nav-link", id: "NavEmployers" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="container-fluid company-job-matched-container">
   <div class="row">
     <!-- user details -->
@@ -30,44 +49,51 @@
              <table class="table">
               <tbody>
                <tr>
-                <td colspan="2">
+                <td colspan="3">
                   <div class="user-show-titles">
                    <h5 class="h6 justify-content-center underlined-top-orange mb-0 pb-0 pt-3">Jordan's skills</h5>
                  </div>
                </td>
-               <td colspan="2">
+               <td colspan="3">
                 <div class="user-show-titles">
                  <h5 class="h6 justify-content-center underlined-top-orange mb-0 pb-0 pt-3">Job's skills</h5>
                </div>
              </td>
-
            </tr>
            <tr>
+            <td><i class="devicon-javascript-plain colored"></i></td>
+
             <td>Javascript</td>
             <td>4</td>
+            <td><i class="devicon-javascript-plain colored"></i></td>
+
             <td>Javascript</td>
             <td>3</td>
           </tr>
           <tr>
+            <td><i class="devicon-css3-plain colored"></i></td>
             <td>CSS</td>
             <td>3</td>
+            <td><i class="devicon-css3-plain colored"></i></td>
+
             <td>CSS</td>
             <td>2</td>
           </tr>
           <tr>
+            <td><i class="devicon-html5-plain colored"></i></td>
+
             <td>HTML</td>
             <td>3</td>
-            <td>HTML</td>
+          </tr>
+          <tr>
+            <td><i class="devicon-rails-plain colored"></i></td>
+            <td>Rails</td>
             <td>2</td>
           </tr>
           <tr>
-            <td>Rails</td>
-            <td>2</td>
-            <td>Rails</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Cybersecurity</td>
+            <td><i class="devicon-angularjs-plain colored"></i></td>
+
+            <td>Angular</td>
             <td>1</td>
           </tr>
         </tbody>
@@ -91,7 +117,7 @@
         <div class="user-show-titles">
          <h4 class="row justify-content-center underlined">Application</h4>
        </div>
-         <h6 class="centered">Senior Javascript Engineer</h6>
+       <h6 class="centered">Senior Javascript Engineer</h6>
        <!-- Large modal -->
        <div class="row pt-4 pb-4">
 

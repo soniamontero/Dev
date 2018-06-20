@@ -1,3 +1,22 @@
+<div class="navbar navbar-expand-md navbar-light fixed-top" id="NavContent" style="background-color: white;">
+  <a href="/">
+    <img class="navbar-brand ml-auto" id="Logo" src="/assets/flock_logo.png" alt="Flock logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end pr-4" id="navbarCollapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to 'Profile', company_company_signup_path, class: "nav-link", id: "NavEmployers" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Settings', company_company_signup_path, class: "nav-link", id: "NavEmployers" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="container-fluid company-job-show-container">
   <div class="row">
     <!-- Job details -->
@@ -20,10 +39,12 @@
         <table class="table">
           <tbody>
             <tr>
+              <td><i class="devicon-javascript-plain colored"></i></td>
               <td>Javascript</td>
               <td>4</td>
             </tr>
             <tr>
+              <td><i class="devicon-css3-plain colored"></i></td>
               <td>CSS</td>
               <td>3</td>
             </tr>
